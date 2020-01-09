@@ -1,0 +1,86 @@
+.login-container {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(109.6deg, rgb(120, 212, 234) 11.2%, rgb(216, 226, 253) 72.1%);
+    background-image: radial-gradient(668px at 2.6% 8.3%, rgb(219, 112, 147) 0%, rgb(255, 228, 225) 49.5%, rgb(200, 130, 200) 99.4%);
+    .login-part {
+        width: 100%;
+        height: 100vh;
+        .login-info {
+            width: 420px;
+            position: fixed;
+            left: 50%;
+            top: 40%;
+            transform: translate(-50%, -50%);
+            z-index: 10;
+            /* 登陆标题 */
+            .login-name {
+                width: 100%;
+                font-size: 24px;
+                color: #fff;
+                text-align: center;
+                line-height: 60px;
+                background: transparent;
+                // font-style: italic;
+                font-weight: 600;
+            }
+            /* 用户登录 */
+            .user-login-container {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                height: 40px;
+                margin-bottom: 40px;
+                .user-ligin {
+                    margin: 0 10px;
+                    color: #fff;
+                }
+                .line {
+                    width: 20px;
+                    height: 2px;
+                    border-radius: 1px;
+                    background-color: #fff;
+                }
+            }
+            .login-main-container {
+                padding: 20px;
+                background-color: #ffffff2e;
+                box-shadow: 0 0 6px rgba(0, 0, 0, .04);
+                border-radius: 6px;
+                .login-main {
+                    width: 100%;
+                    margin-bottom: 10px;
+                    &.btn-center {
+                        text-align: center;
+                        margin-top: 30px;
+                    }
+                    .login-title {
+                        font-size: 20px;
+                        line-height: 40px;
+                        margin-bottom: 10px;
+                        font-weight: 600;
+                    }
+                    .login-content {}
+                    .login-btn {
+                        width: 75%;
+                    }
+                }
+                .password-container {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    align-items: center;
+                    height: 40px;
+                    .forget-password {
+                        color: red;
+                        cursor: pointer;
+                    }
+                    .remember-password {
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+    }
+}
